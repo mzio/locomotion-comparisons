@@ -41,17 +41,17 @@ class LegendObject(object):
 
 # Load my results
 envs = ['HalfCheetahBulletEnv-v0',
-        'HopperBulletEnv-v0',
-        'Walker2DBulletEnv-v0',
+        'HalfCheetahPyBulletEnv-v0',
+        'HalfCheetahMuJoCoEnv-v0',
         'AntBulletEnv-v0',
-        'InvertedPendulumBulletEnv-v0',
-        'InvertedDoublePendulumBulletEnv-v0',
-        'ReacherBulletEnv-v0']
+        'AntPyBulletEnv-v0',
+        'AntMuJoCoEnv-v0']
 
 # Plot and save to disk
 for env in envs:
     fig = plt.figure(1, figsize=(12, 7))
-    for algo, color in [('TD3', 'b'), ('DDPG', '#ffa500'), ('OurDDPG', 'g')]:  # #ffa500 is orange
+    # for algo, color in [('TD3', 'b'), ('DDPG', '#ffa500'), ('OurDDPG', 'g')]:  # #ffa500 is orange
+    for algo, color in [('TD3', 'b')]:  # #ffa500 is orange
         results = np.array([np.load(open('learning_curves/%s_%s_%d.npy' % (algo, env, i))) for i in range(10)])
         mean = np.mean(results, axis=0)
         std = np.std(results, axis=0)
