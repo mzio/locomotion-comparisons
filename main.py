@@ -11,6 +11,8 @@ import TD3
 import OurDDPG
 import DDPG
 
+import pybulletgym
+
 
 # Runs policy for X episodes and returns average reward
 def evaluate_policy(policy, eval_episodes=10):
