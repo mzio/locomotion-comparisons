@@ -79,10 +79,10 @@ PyBullet-Gym Roboschool
 ### HalfCheetah
 
 PyBullet
-![PyBullet Default HalfCheetah](./my_plots/HalfCheetahEnv-v0_parallel.png)
+![PyBullet Default HalfCheetah](./my_plots/HalfCheetahBulletEnv-v0_parallel.png)
 
 PyBullet-Gym MuJoCo  
 ![PyBullet-Gym MuJoCo HalfCheetah](./my_plots/HalfCheetahMuJoCoEnv-v0_parallel.png)
 
 PyBullet-Gym Roboschool  
-![PyBullet-Gym Roboschool HalfCheetah](./my_plots/HalfCheetahEnv-v0_parallel.png)
+![PyBullet-Gym Roboschool HalfCheetah](./my_plots/HalfCheetahPyBulletEnv-v0_parallel.png)
